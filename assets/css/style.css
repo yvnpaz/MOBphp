@@ -1,0 +1,61 @@
+
+.row.productAlign {
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.comment-avatar > img {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+}
+
+.buttonFibonacci {
+    width: 100px;
+    height: 37px;
+    margin-left: 5px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------- Box --------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.comments-container {
+	margin: 30px;
+}
+
+.dataInput {
+    display: flex;
+    flex-direction: row;
+}
+
+/**---------------------
+ * Details of the box
+ -----------------------*/
+
+.commentAlign {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/**---------------------
+ * Comment box
+ -----------------------*/
+
+ .comment-box .comment-head2 {
+    background: #d0d3d4;
+    padding: 10px 12px;
+    margin-left: 10px;
+
+    border-bottom: 1px solid #E5E5E5;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 10px 10px 10px 10px;
+}
