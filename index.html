@@ -35,10 +35,10 @@
             </div>
             <div class="comment-box">
                 <div class="comment-head2">
-                    <form id="data" action="controller/handler.php" method="post">
+                    <form id="data" action="controller/handler.php" method="post" onsubmit="return valid()">
                         <p>Data:</p>
                         <div class="dataInput">
-                            <input type="text" class="form-control" name="fibonacciNumber" size="11"/>
+                            <input id="fibo" type="text" class="form-control" name="fibonacciNumber" size="11"/>
                             <button type="submit" class="btn btn-primary buttonFibonacci">Fibonacci</button>
                         </div>
                     </form>
@@ -46,7 +46,22 @@
             </div>
         </div>
     </main>
+    <script>
+        function valid(){
+            var element = document.getElementById("fibo");
+            if(element.value > 33){
+                alert("Number too high.");
+                return false;
+            }else if(element.value >= 20 && element.value <= 33){
+                alert("It's begin to be a high number...");
+                return true;
+            }else{
+                return true;
+            }
+        }
+    </script>
 </body>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
