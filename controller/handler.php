@@ -38,7 +38,7 @@
     }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (isset($_POST['fibonacciNumber']) && $fibonacciNumber != '' && !$flagError) {
+        if (isset($_POST['fibonacciNumber']) && $fibonacciNumber != '' && !$flagError && preg_match('/[a-zA-Z]+/', $num)) {
             echo '<!DOCTYPE html>
             <html lang="en">
             
